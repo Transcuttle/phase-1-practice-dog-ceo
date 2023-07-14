@@ -37,6 +37,9 @@ function addBreeds(array){
     array.forEach(e => {
         let p = document.createElement('p');
         p.textContent = e;
+        p.addEventListener('click', (e) => {
+            e.target.style.color = 'lightgreen'
+        })
         document.querySelector('#dog-breeds').appendChild(p);
     })
 }
